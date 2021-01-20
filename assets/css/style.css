@@ -21,16 +21,16 @@
 
 @font-face {
     font-family: "Montserrat";
-  src: url("../fonts/Montserrat-Bold.woff2") format("woff2"), url("../Montserrat-Bold.woff") format("woff");
-  font-weight: 700;
+  src: url("../fonts/Montserrat-Regular.woff2") format("woff2"), url("../Montserrat-Regular.woff") format("woff");
+  font-weight: 400;
   font-display: swap;
   font-style: normal;
 }
 
 @font-face {
     font-family: "Montserrat";
-  src: url("../fonts/Montserrat-Regular.woff2") format("woff2"), url("../Montserrat-Regular.woff") format("woff");
-  font-weight: 400;
+  src: url("../fonts/Montserrat-Bold.woff2") format("woff2"), url("../Montserrat-Bold.woff") format("woff");
+  font-weight: 700;
   font-display: swap;
   font-style: normal;
 }
@@ -39,14 +39,6 @@
     font-family: "NotoSans";
   src: url("../fonts/NotoSans-Bold.woff2") format("woff2"), url("../NotoSans-Bold.woff") format("woff");
   font-weight: 700;
-  font-display: swap;
-  font-style: normal;
-}
-
-@font-face {
-    font-family: "Raleway";
-  src: url("../fonts/Raleway-Regular.woff2") format("woff2"), url("../Raleway-Regular.woff") format("woff");
-  font-weight: 400;
   font-display: swap;
   font-style: normal;
 }
@@ -63,6 +55,14 @@
     font-family: "Raleway";
   src: url("../fonts/Raleway-Medium.woff2") format("woff2"), url("../Raleway-Medium.woff") format("woff");
   font-weight: 500;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+    font-family: "Raleway";
+  src: url("../fonts/Raleway-Regular.woff2") format("woff2"), url("../Raleway-Regular.woff") format("woff");
+  font-weight: 400;
   font-display: swap;
   font-style: normal;
 }
@@ -1230,6 +1230,16 @@ section {
         padding-top: 124px;
         padding-bottom: 124px;
     }
+}
+
+.hidden {
+    visibility: hidden;
+    font-size: 0;
+    width: 1px;
+    height: 1px;
+    position: absolute;
+    overflow: hidden;
+    opacity: 0;
 }
 
 .header {
