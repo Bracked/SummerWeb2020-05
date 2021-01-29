@@ -5,16 +5,16 @@
 /*Z-index*/
 @font-face {
     font-family: "Merriweather";
-  src: url("../fonts/Merriweather-Bold.woff2") format("woff2"), url("../Merriweather-Bold.woff") format("woff");
-  font-weight: 700;
+  src: url("../fonts/Merriweather-Regular.woff2") format("woff2"), url("../Merriweather-Regular.woff") format("woff");
+  font-weight: 400;
   font-display: swap;
   font-style: normal;
 }
 
 @font-face {
     font-family: "Merriweather";
-  src: url("../fonts/Merriweather-Regular.woff2") format("woff2"), url("../Merriweather-Regular.woff") format("woff");
-  font-weight: 400;
+  src: url("../fonts/Merriweather-Bold.woff2") format("woff2"), url("../Merriweather-Bold.woff") format("woff");
+  font-weight: 700;
   font-display: swap;
   font-style: normal;
 }
@@ -28,16 +28,16 @@
 }
 
 @font-face {
-    font-family: "Montserrat";
-  src: url("../fonts/Montserrat-Bold.woff2") format("woff2"), url("../Montserrat-Bold.woff") format("woff");
+    font-family: "NotoSans";
+  src: url("../fonts/NotoSans-Bold.woff2") format("woff2"), url("../NotoSans-Bold.woff") format("woff");
   font-weight: 700;
   font-display: swap;
   font-style: normal;
 }
 
 @font-face {
-    font-family: "NotoSans";
-  src: url("../fonts/NotoSans-Bold.woff2") format("woff2"), url("../NotoSans-Bold.woff") format("woff");
+    font-family: "Montserrat";
+  src: url("../fonts/Montserrat-Bold.woff2") format("woff2"), url("../Montserrat-Bold.woff") format("woff");
   font-weight: 700;
   font-display: swap;
   font-style: normal;
@@ -266,34 +266,34 @@ body {
     color: #fff;
 }
 
-.text-block h4.text-block__title {
+.text-block h3.text-block__title {
     font-size: 1.5rem;
 }
 
 @media (min-width: 768px) {
-    .text-block h4.text-block__title {
+    .text-block h3.text-block__title {
         font-size: 1.7rem;
     }
 }
 
 @media (min-width: 1200px) {
-    .text-block h4.text-block__title {
+    .text-block h3.text-block__title {
         font-size: 2rem;
     }
 }
 
-.text-block h5.text-block__title {
+.text-block h4.text-block__title {
     font-size: 1.3rem;
 }
 
 @media (min-width: 768px) {
-    .text-block h5.text-block__title {
+    .text-block h4.text-block__title {
         font-size: 1.5rem;
     }
 }
 
 @media (min-width: 1200px) {
-    .text-block h5.text-block__title {
+    .text-block h4.text-block__title {
         font-size: 1.7rem;
     }
 }
@@ -1330,6 +1330,7 @@ section {
 .header__burger span {
     position: absolute;
     top: 50%;
+    left: 0;
     width: 30px;
     height: 2px;
     background: url("../img/Icon/burger__icon1/3.svg") 30px 5px;
@@ -1417,7 +1418,7 @@ body.showMenu .header__burger span {
 
 .menu__link:focus {
     padding: 5px;
-    border: 1px solid #000;
+    outline: 1px solid #000;
 }
 
 .menu__link:hover::after {
@@ -1585,7 +1586,7 @@ body.showMenu .menu {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    gap: 15px;
+    row-gap: 15px;
 }
 
 @media (min-width: 992px) {
@@ -1860,6 +1861,10 @@ body.showMenu .menu {
 
 .character {
     background-color: #f9fbfb;
+}
+
+.character__inner {
+    padding-bottom: 10px;
 }
 
 @media (max-width: 992px) {
@@ -2150,13 +2155,13 @@ body.showMenu .menu {
 }
 
 .form textarea {
-    resize: block;
+    resize: none;
     min-height: 40px;
 }
 
 .form input:focus,
   .form textarea:focus {
-    border: 1px solid white;
+    outline: 1px solid white;
 }
 
 .form input:focus::-webkit-input-placeholder, .form textarea:focus::-webkit-input-placeholder {
@@ -2213,6 +2218,10 @@ body.showMenu .menu {
 
 .form__list:not(:last-child) {
     margin-bottom: 35px;
+}
+
+.form__list a {
+    color: rgba(255, 255, 255, 0.7);
 }
 
 .form__list span {
